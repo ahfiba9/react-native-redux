@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "dom",
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "types/*",
+        "node_modules/*"
+      ],
+      "src/*": [
+        "src/*"
+      ],
+      "jest-helpers/*": [
+        "jest-helpers/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "strictFunctionTypes": false,
+    "strictNullChecks": true,
+    "sourceRoot": "/",
+    "resolveJsonModule": true,
+    "noErrorTruncation": true
+  },
+  "include": [
+    "./src",
+    "metro.config.js",
+    ".eslintrc.js",
+    "react-native.config.js",
+    "./types",
+    "__tests__",
+    "__mocks__",
+    "jest-helpers",
+    "scripts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
